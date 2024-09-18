@@ -1,146 +1,72 @@
-/* General Styles */
-body, html {
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
+    color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+section {
+    padding: 60px 20px;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+h1, h2, h3 {
+    margin: 0 0 20px;
 }
 
-header nav ul li {
+/* Navigation */
+#main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav li {
+    display: inline;
     margin: 0 15px;
 }
 
-header nav ul li a {
+#main-nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    color: #ff9800;
 }
 
 /* Hero Section */
 #hero {
-    background-color: #4CAF50;
+    background: url('path/to/hero-background.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+    padding: 100px 20px;
 }
 
-#hero h1 {
-    font-size: 3rem;
-}
-
-#hero p {
-    font-size: 1.5rem;
-}
-
-/* Section Styling */
-section {
-    padding: 60px 20px;
-    margin-top: 60px;
-    text-align: center;
-}
-
-#about, #contact {
-    background-color: #f4f4f4;
-}
-
-#projects {
-    background-color: #fff;
-}
-
-#projects .project {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-#projects .project a {
+.cta-button {
+    background-color: #f56c6c;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #007BFF;
+    border-radius: 5px;
 }
 
-#projects .project a:hover {
-    text-decoration: underline;
+/* Project Section */
+.project {
+    margin-bottom: 30px;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-}
-
-/* Animations */
-
-/* Define the slide-in animation */
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromBottom {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Apply slide-in animations to different elements */
-.slide-in-left {
-    animation: slideInFromLeft 1s ease-out;
-}
-
-.slide-in-right {
-    animation: slideInFromRight 1s ease-out;
-}
-
-.slide-in-bottom {
-    animation: slideInFromBottom 1s ease-out;
 }
