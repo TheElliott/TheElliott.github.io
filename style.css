@@ -1,8 +1,8 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -11,9 +11,10 @@ header {
     color: white;
     padding: 10px 0;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 100;
+    text-align: center;
 }
 
 header nav ul {
@@ -21,6 +22,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -46,6 +48,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 #hero h1 {
@@ -60,9 +63,10 @@ header nav ul li a:hover {
 section {
     padding: 60px 20px;
     margin-top: 60px;
+    text-align: center;
 }
 
-#about {
+#about, #contact {
     background-color: #f4f4f4;
 }
 
@@ -72,6 +76,7 @@ section {
 
 #projects .project {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #projects .project a {
@@ -83,18 +88,10 @@ section {
     text-decoration: underline;
 }
 
-#contact {
-    background-color: #f4f4f4;
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-/* Smooth scrolling for sections */
-html {
-    scroll-behavior: smooth;
 }

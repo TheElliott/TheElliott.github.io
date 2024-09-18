@@ -14,7 +14,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="resume.pdf" target="_blank">Resume</a></li> <!-- Link to your resume -->
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -55,6 +55,16 @@
         <p>&copy; 2024 Elliott Brown</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
