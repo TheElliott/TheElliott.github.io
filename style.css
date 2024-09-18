@@ -1,22 +1,100 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  footer {
+    scroll-behavior: smooth;
+}
+
+header {
     background-color: #333;
     color: white;
-    padding: 10px;
-  }  
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #4CAF50;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+#about {
+    background-color: #f4f4f4;
+}
+
+#projects {
+    background-color: #fff;
+}
+
+#projects .project {
+    margin-bottom: 30px;
+}
+
+#projects .project a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#projects .project a:hover {
+    text-decoration: underline;
+}
+
+#contact {
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Smooth scrolling for sections */
+html {
+    scroll-behavior: smooth;
+}
