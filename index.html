@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Elliott Brown</title>
 </head>
 <body>
-    <div class="landing">
-        <h1>Your Name</h1>
-        <p>Click anywhere to enter</p>
-    </div>
+    <header>
+        <a href="#" class="logo">Elliott</a>
 
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="content">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I'm a game designer with a passion for creating engaging experiences.</p>
-        </section>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Elliott</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Born in San Diego, California, Elliott Brown first discovered his passion for games at a young age. Taking after his family of gamers, he was exposed to video games very early on in his life. While playing Fat Princess, his dad showed him his name in the credits. After that, he was obsessed with the idea of being in the credits of a game and even making his own. He fell in love with the creation of video games, spending most of his life playing and appreciating them.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ebrowndev/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/TheElliott" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://x.com/ebrowndev" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of the games I've worked on:</p>
-            <ul>
-                <li>Game 1</li>
-                <li>Game 2</li>
-                <li>Game 3</li>
-            </ul>
-        </section>
+    <section id="services">
+        <h2>Services</h2>
+        <p>Details about services offered...</p>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or social media!</p>
-        </section>
-    </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Details about skills...</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Details about education...</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Details about experience...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact information...</p>
+    </section>
 
     <script src="script.js"></script>
 </body>
