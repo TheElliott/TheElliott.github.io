@@ -24,13 +24,13 @@ body {
 }
 
 header {
-    margin-top: 20px;
+    margin-top: 0px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
+    padding: 3rem 9%;
+    background-color: #d5e3f3;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
